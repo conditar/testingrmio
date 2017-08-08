@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		365C6986375EA437ABC149E7 /* Pods_rmiotest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCA30B15E79E73EA4A61260 /* Pods_rmiotest.framework */; };
 		432771021F36568E00E97648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432771011F36568E00E97648 /* AppDelegate.swift */; };
 		432771041F36568E00E97648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432771031F36568E00E97648 /* ViewController.swift */; };
 		432771071F36568F00E97648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432771051F36568F00E97648 /* Main.storyboard */; };
 		432771091F36568F00E97648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432771081F36568F00E97648 /* Assets.xcassets */; };
 		4327710C1F36568F00E97648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4327710A1F36568F00E97648 /* LaunchScreen.storyboard */; };
+		432771141F365C0F00E97648 /* GMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432771131F365C0F00E97648 /* GMViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,11 @@
 		432771081F36568F00E97648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4327710B1F36568F00E97648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4327710D1F36568F00E97648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432771131F365C0F00E97648 /* GMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMViewController.swift; sourceTree = "<group>"; };
+		432771151F367AF000E97648 /* rmiotest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rmiotest-Bridging-Header.h"; sourceTree = "<group>"; };
+		602E71C67FF0EFB29C18B59F /* Pods-rmiotest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rmiotest.release.xcconfig"; path = "Pods/Target Support Files/Pods-rmiotest/Pods-rmiotest.release.xcconfig"; sourceTree = "<group>"; };
+		793F2BB8C7F41D02E6940189 /* Pods-rmiotest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rmiotest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rmiotest/Pods-rmiotest.debug.xcconfig"; sourceTree = "<group>"; };
+		EFCA30B15E79E73EA4A61260 /* Pods_rmiotest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rmiotest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365C6986375EA437ABC149E7 /* Pods_rmiotest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,8 @@
 			children = (
 				432771001F36568E00E97648 /* rmiotest */,
 				432770FF1F36568E00E97648 /* Products */,
+				FF16DB11167CF3A62F5EE3FD /* Pods */,
+				55983FD1C4DB2B21457083D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +67,30 @@
 				432771011F36568E00E97648 /* AppDelegate.swift */,
 				432771031F36568E00E97648 /* ViewController.swift */,
 				432771051F36568F00E97648 /* Main.storyboard */,
+				432771131F365C0F00E97648 /* GMViewController.swift */,
 				432771081F36568F00E97648 /* Assets.xcassets */,
 				4327710A1F36568F00E97648 /* LaunchScreen.storyboard */,
 				4327710D1F36568F00E97648 /* Info.plist */,
+				432771151F367AF000E97648 /* rmiotest-Bridging-Header.h */,
 			);
 			path = rmiotest;
+			sourceTree = "<group>";
+		};
+		55983FD1C4DB2B21457083D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA30B15E79E73EA4A61260 /* Pods_rmiotest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF16DB11167CF3A62F5EE3FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				793F2BB8C7F41D02E6940189 /* Pods-rmiotest.debug.xcconfig */,
+				602E71C67FF0EFB29C18B59F /* Pods-rmiotest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 432771101F36568F00E97648 /* Build configuration list for PBXNativeTarget "rmiotest" */;
 			buildPhases = (
+				0DB2E208585995864F62B408 /* [CP] Check Pods Manifest.lock */,
 				432770FA1F36568D00E97648 /* Sources */,
 				432770FB1F36568D00E97648 /* Frameworks */,
 				432770FC1F36568D00E97648 /* Resources */,
+				04135C75103F2FF881F801FC /* [CP] Embed Pods Frameworks */,
+				8E63311AB04E64C98B57B7A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +128,7 @@
 				TargetAttributes = {
 					432770FD1F36568D00E97648 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,11 +164,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04135C75103F2FF881F801FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rmiotest/Pods-rmiotest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DB2E208585995864F62B408 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E63311AB04E64C98B57B7A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rmiotest/Pods-rmiotest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		432770FA1F36568D00E97648 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432771141F365C0F00E97648 /* GMViewController.swift in Sources */,
 				432771041F36568E00E97648 /* ViewController.swift in Sources */,
 				432771021F36568E00E97648 /* AppDelegate.swift in Sources */,
 			);
@@ -256,24 +338,31 @@
 		};
 		432771111F36568F00E97648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793F2BB8C7F41D02E6940189 /* Pods-rmiotest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = rmiotest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annmariecondit.com.rmiotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rmiotest/rmiotest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		432771121F36568F00E97648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602E71C67FF0EFB29C18B59F /* Pods-rmiotest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = rmiotest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annmariecondit.com.rmiotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rmiotest/rmiotest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +386,7 @@
 				432771121F36568F00E97648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

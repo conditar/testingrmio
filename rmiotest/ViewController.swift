@@ -7,8 +7,18 @@
 //
 
 import UIKit
-
+var listOfLocations = [String]()
 class ViewController: UIViewController {
+    @IBOutlet weak var locationTxt: UITextField!
+    
+    @IBAction func submitBtn(_ sender: UIButton) {
+        if (locationTxt.text != ""){
+            listOfLocations.append(locationTxt.text!)
+        }
+        
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
